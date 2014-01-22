@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Andrew Deck</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body ng-controller="DesktopCtrl">
+
+  <div class='desktop-icons' ng-repeat="icon in icons">
+    <img ng-src="{{icon.thumbnail}}"/>
+    <label>{{icon.name}}</label>
+  </div>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
